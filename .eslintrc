@@ -1,0 +1,18 @@
+{
+	"globals": {
+		//global variables
+		"jQuery": true,
+        "$": true,
+		"angular": true,
+	},
+	"env": { //env in which I will write
+		"browser": true,
+		"node": true
+	},
+	"rules": { //0-off, 1-warn, 2-on
+		"quotes": [1, "single"]
+	},
+	"parserOptions": {
+		"ecmaVersion": 6
+ 	}
+}

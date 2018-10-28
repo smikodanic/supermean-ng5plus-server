@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Code View: <%= filePath %> - <%= codeLang %></title>
+	<link href="/npm/prismjs/themes/prism.css" rel="stylesheet">
+	<link href="/npm/prismjs/themes/prism-coy.css" rel="stylesheet">
+	<style>
+		body {
+			padding: 21px 34px;
+			background-color:#F5F2F0;
+		}
+	</style>
+</head>
+<body>
+<div class="container-fluid" style="border:1px solid #ECE8E7; padding:8px;">
+	<!-- </pre><code class="language-css">p { color: red }</code></pre> -->
+
+	<h4 style="color:Gray"><small>file type: <%= codeLang %></small> <br> <%= filePath %></h4>
+
+	<pre><code><%- code %></code></pre>
+
+	<script src="/npm/prismjs/prism.js"></script>
+
+</div>
+</body>
+</html>
